@@ -50,6 +50,8 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Label ypos; 
+    
+    LinkedList<Object>ListaPuntos;
        
    @FXML
    private void transicion (ActionEvent event){
