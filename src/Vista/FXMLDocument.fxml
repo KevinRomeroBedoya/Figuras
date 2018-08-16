@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="916.0" prefWidth="1223.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="taller1.FXMLDocumentController">
+   <children>
+
+      <MenuBar id="menubar" layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fig1">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#C_Fig1" text="CreateFig1" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Fig2">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#C_Fig2" text="CreateFig2" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Fig3">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#C_Fig3" text="CreateFig3" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Canvas fx:id="lienzo" height="872.0" layoutY="67.0" onMouseMoved="#M_coords" width="1223.0" />
+      <ColorPicker fx:id="colorpicker" layoutX="498.0" layoutY="2.0" onAction="#changecolor" />
+      <Label layoutX="210.0" layoutY="6.0" text="Seleccione el color deseado y cree la figura de nuevo" />
+      <Button layoutX="633.0" layoutY="2.0" mnemonicParsing="false" onAction="#limpiar" text="Limpiar" />
+      <Circle fx:id="cr" fill="DODGERBLUE" layoutX="133.0" layoutY="503.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="transicion" layoutX="706.0" layoutY="2.0" mnemonicParsing="false" onAction="#transicion" text="Transicion" />
+      <Label layoutX="842.0" layoutY="15.0" text="X:" />
+      <Label layoutX="842.0" layoutY="41.0" text="Y:" />
+      <Label layoutX="859.0" layoutY="15.0" prefHeight="17.0" prefWidth="56.0" fx:id="xpos" />
+      <Label fx:id="ypos" layoutX="859.0" layoutY="41.0" prefHeight="17.0" prefWidth="56.0" />
+      <Button layoutY="29.0" mnemonicParsing="false" onAction="#agregar_figura" text="Agregar figura" />
+      <Button layoutX="103.0" layoutY="29.0" mnemonicParsing="false" onAction="#guardar_figura" text="Guardar figura" />
+   </children>
+</AnchorPane>
