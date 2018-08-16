@@ -85,7 +85,7 @@ public class FXMLDocumentController implements Initializable {
          g.setStroke(c);
     }
         
-    LinkedList<Object> ListaPuntos;
+
     
   @FXML
     private void C_Fig1(ActionEvent event) {
